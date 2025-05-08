@@ -195,7 +195,7 @@ effectiveStdenv.mkDerivation (
 
         # TODO: Replace with autoAddDriverRunpath
         # once https://github.com/NixOS/nixpkgs/pull/275241 has been merged
-        cudaPackages.addOpenGLRunpath
+        autoAddDriverRunpath
       ]
       ++ optionals (effectiveStdenv.hostPlatform.isGnu && enableStatic) [
         glibc.static

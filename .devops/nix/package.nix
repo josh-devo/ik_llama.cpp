@@ -13,6 +13,7 @@
   mpi,
   blas,
   cudaPackages,
+  autoAddDriverRunpath,
   darwin,
   rocmPackages,
   vulkan-headers,
